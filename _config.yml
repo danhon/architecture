@@ -1,0 +1,20 @@
+baseurl: ""
+collections:
+  about:
+    output: true
+  data-topics:
+    output: true
+  work:
+    output: true
+  dss:
+    output: true
+  projects-cwds:
+    output: true
+  news-cwds:
+    output: true
+  people:
+    output: true
+  dashboard:
+    output: true
+  procurements:
+    output: true
