@@ -46,17 +46,17 @@ If the cursor does materialize, the claims on the base DB2 objects held by the c
 
 The following criteria should be used to decide when it is appropriate to code WITH HOLD on a cursor:
 
-• If you are certain that the cursor will always materialize, you should leave the WITH HOLD clause on the cursor.
+* If you are certain that the cursor will always materialize, you should leave the WITH HOLD clause on the cursor.
 
 
-• If the cursor does not materialize, and is easy and inexpensive to reposition, you should consider removing the WITH HOLD from the cursor and reopening it after each commit.
+* If the cursor does not materialize, and is easy and inexpensive to reposition, you should consider removing the WITH HOLD from the cursor and reopening it after each commit.
 
 
-• If the cursor does not materialize, but the repositioning logic is expensive, there are some techniques to improve the performance of the repositioning so that the WITH HOLD clause can be removed. These techniques are described in the topic “Cursors WITH HOLD” in chapter 12 of the IBM redbook “DB2 UDB for z/OS: Application Design for High Performance and Availability”, SG24-7134.
+* If the cursor does not materialize, but the repositioning logic is expensive, there are some techniques to improve the performance of the repositioning so that the WITH HOLD clause can be removed. These techniques are described in the topic “Cursors WITH HOLD” in chapter 12 of the IBM redbook “DB2 UDB for z/OS: Application Design for High Performance and Availability”, SG24-7134.
 
 
-• If the cost of the cursor repositioning cannot be reduced to an acceptable level, the WITH HOLD should be left on the cursor to maintain position. Be aware of the effect of the WITH HOLD clause on lock and claim retention, and schedule the process at a time when it will not be in contention with utilities that require drains (e.g. database Reorgs) or in contention with other applications.
+* If the cost of the cursor repositioning cannot be reduced to an acceptable level, the WITH HOLD should be left on the cursor to maintain position. Be aware of the effect of the WITH HOLD clause on lock and claim retention, and schedule the process at a time when it will not be in contention with utilities that require drains (e.g. database Reorgs) or in contention with other applications.
 
 
-• In a distributed environment, using a WITH HOLD cursor will prevent efficient thread pooling. See the topic “Thread reuse in a distributed environment” in chapter 11 of the IBM redbook “DB2 UDB for z/OS: Application Design for High Performance and Availability”, SG24-7134.
+* In a distributed environment, using a WITH HOLD cursor will prevent efficient thread pooling. See the topic “Thread reuse in a distributed environment” in chapter 11 of the IBM redbook “DB2 UDB for z/OS: Application Design for High Performance and Availability”, SG24-7134.
 
