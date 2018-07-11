@@ -27,4 +27,7 @@ This wiki is a place for documenting agreements and practices across the various
 ## Databases
   * [Adding Data to DB2](add-data-to-db2.md)
   * [Upgrading CWS CARES to new DB2 schema version](db/cwscms-upgrades.md)
-  * [DB2: Minimize Amount of Data Returned to Your Program](db/minimize-amt-of-data-returned.md)
+### DB2 for z/OS Proven Practices for Programmers
+  * [Minimize Amount of Data Returned to Your Program](db/minimize-amt-of-data-returned.md)
+  * [Cursor Processing](db/cursorprocessing.md)
+  
