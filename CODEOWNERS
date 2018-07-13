@@ -1,0 +1,12 @@
+# These owners will be the default owners for everything in
+# the repo. Unless a later match takes precedence,
+# @global-owner1 and @global-owner2 will be requested for
+# review when someone opens a pull request.
+*       @ca-cwds/architecture
+
+# Root of Practices directory, includes all subdirectories and files
+/practices/ @ca-cwds/architecture
+
+# Root of CICD directory, to allow DevOps teams to approve practices added 
+# to the CI/CD directory
+/practices/cicd/  @ca-cwds/devops-eng
