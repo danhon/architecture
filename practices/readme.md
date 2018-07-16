@@ -30,4 +30,5 @@ This wiki is a place for documenting agreements and practices across the various
 ### DB2 for z/OS Proven Practices for Programmers
   * [Minimize Amount of Data Returned to Your Program](db/minimize-amt-of-data-returned.md)
   * [Cursor Processing](db/cursorprocessing.md)
+  * [Avoid Frequent Health Checks](db/avoidfrequenthealthchecks.md)
   
